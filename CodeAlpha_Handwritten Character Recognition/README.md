@@ -42,11 +42,27 @@ WriteLens turns a handwritten mark into an explainable character prediction thro
 
 ---
 
-<a href="./docs/screenshots/01-recognition-studio-dark.png">
-  <img src="./docs/screenshots/01-recognition-studio-dark.png" alt="WriteLens Recognition Studio" width="100%">
+<div align="center">
+
+### PRODUCT SHOWCASE
+
+## From a handwritten mark to an explainable prediction.
+
+<sub>One focused workspace for handwriting capture, preprocessing, inference, confidence, ranked alternatives and private result review.</sub>
+
+<br><br>
+
+<a href="./docs/screenshots/05-recognition-result-character-dark.png">
+  <img src="./docs/screenshots/05-recognition-result-character-dark.png" alt="WriteLens end-to-end recognition workspace" width="100%">
 </a>
 
-<p align="center"><sub><strong>WriteLens Recognition Studio:</strong> a focused handwriting workspace with upload and drawing inputs, model selection, private processing, and a dedicated prediction panel.</sub></p>
+<br>
+
+**RECOGNITION WORKSPACE · EXPLAINABLE RESULT · PRIVATE PROCESSING**
+
+</div>
+
+> **Portfolio focus:** WriteLens is presented as a complete ML product—not a collection of disconnected UI screenshots. The main showcase highlights the real recognition flow first, while the detailed product tour below reveals each supporting surface individually.
 
 ---
 
@@ -128,136 +144,152 @@ WriteLens was designed around that complete lifecycle.
 
 ---
 
+<a id="product-tour"></a>
 ## Product Tour
 
-> Every screenshot below uses a repository-relative path and can be clicked to open the original full-resolution image on GitHub.
+The visual tour follows the real WriteLens workflow in a clean, portfolio-style sequence. **Each screen is shown individually at full width** so the README feels like a polished product case study instead of a screenshot collage.
 
-### 1. Secure Entry Experience
-
-The authentication screen introduces the product before access to the private workspace. Sign-in and account creation share one visual system while the backend owns authentication state through an HttpOnly cookie.
+### 01 · Secure product entry
 
 <a href="./docs/screenshots/11-authentication-landing-dark.png">
-  <img src="./docs/screenshots/11-authentication-landing-dark.png" alt="WriteLens authentication landing screen" width="100%">
+  <img src="./docs/screenshots/11-authentication-landing-dark.png" alt="WriteLens authentication landing" width="100%">
 </a>
 
-<p align="center"><sub><strong>Authentication Landing:</strong> product positioning, recognition pipeline summary, secure access and account creation in a single screen.</sub></p>
+<p align="center"><sub><strong>Secure Entry:</strong> product positioning, recognition context and protected access in one focused landing experience.</sub></p>
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<a href="./docs/screenshots/12-sign-in-panel-dark.png"><img src="./docs/screenshots/12-sign-in-panel-dark.png" alt="WriteLens sign in panel" width="100%"></a>
-<br><sub><strong>Sign In:</strong> email/password authentication with password visibility control and protected cookie messaging.</sub>
-</td>
-<td width="50%" valign="top">
-<a href="./docs/screenshots/13-create-account-panel-dark.png"><img src="./docs/screenshots/13-create-account-panel-dark.png" alt="WriteLens account creation panel" width="100%"></a>
-<br><sub><strong>Create Account:</strong> full name, email and password onboarding backed by the application database.</sub>
-</td>
-</tr>
-</table>
+<details>
+<summary><strong>View sign-in screen</strong></summary>
+<br>
+<a href="./docs/screenshots/12-sign-in-panel-dark.png"><img src="./docs/screenshots/12-sign-in-panel-dark.png" alt="WriteLens sign in" width="100%"></a>
+<br><sub><strong>Sign In:</strong> email/password authentication with password visibility control and HttpOnly-session messaging.</sub>
+</details>
 
-### 2. Recognition Studio
+<details>
+<summary><strong>View account creation screen</strong></summary>
+<br>
+<a href="./docs/screenshots/13-create-account-panel-dark.png"><img src="./docs/screenshots/13-create-account-panel-dark.png" alt="WriteLens create account" width="100%"></a>
+<br><sub><strong>Create Account:</strong> full-name, email and password onboarding backed by the application database.</sub>
+</details>
 
-The main workspace is intentionally task-focused: prepare one handwriting sample, choose a recognition mode, and keep the prediction context visible alongside the input.
+---
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<a href="./docs/screenshots/02-upload-workspace-dark.png"><img src="./docs/screenshots/02-upload-workspace-dark.png" alt="WriteLens image upload workspace" width="100%"></a>
-<br><sub><strong>Upload Mode:</strong> drag-and-drop or browse for PNG, JPEG and WebP samples.</sub>
-</td>
-<td width="50%" valign="top">
-<a href="./docs/screenshots/03-drawing-canvas-empty-dark.png"><img src="./docs/screenshots/03-drawing-canvas-empty-dark.png" alt="WriteLens drawing workspace" width="100%"></a>
-<br><sub><strong>Draw Mode:</strong> direct handwriting input with pen, eraser, stroke sizes and clear controls.</sub>
-</td>
-</tr>
-</table>
+### 02 · Recognition Studio
 
-### 3. From Stroke to Prediction
+<a href="./docs/screenshots/01-recognition-studio-dark.png">
+  <img src="./docs/screenshots/01-recognition-studio-dark.png" alt="WriteLens Recognition Studio dark theme" width="100%">
+</a>
 
-WriteLens keeps the user's source and the model's interpretation visible together. This makes the recognition process easier to understand and exposes model uncertainty instead of presenting every result as equally certain.
+<p align="center"><sub><strong>Dark Recognition Studio:</strong> upload/draw workflow, recognition mode, private-input messaging and prediction context kept together.</sub></p>
+
+<details>
+<summary><strong>View the same workspace in light mode</strong></summary>
+<br>
+<a href="./docs/screenshots/10-recognition-light.png"><img src="./docs/screenshots/10-recognition-light.png" alt="WriteLens Recognition Studio light theme" width="100%"></a>
+</details>
+
+---
+
+### 03 · Upload handwriting
+
+<a href="./docs/screenshots/02-upload-workspace-dark.png">
+  <img src="./docs/screenshots/02-upload-workspace-dark.png" alt="WriteLens upload handwriting workspace" width="100%">
+</a>
+
+<p align="center"><sub><strong>Image Input:</strong> drag-and-drop or browse for PNG, JPEG and WebP handwriting samples before deterministic preprocessing.</sub></p>
+
+---
+
+### 04 · Draw directly on the canvas
 
 <a href="./docs/screenshots/04-drawing-character-dark.png">
-  <img src="./docs/screenshots/04-drawing-character-dark.png" alt="Handwritten S on WriteLens drawing canvas" width="100%">
+  <img src="./docs/screenshots/04-drawing-character-dark.png" alt="WriteLens handwritten character on canvas" width="100%">
 </a>
 
-<p align="center"><sub><strong>Input Ready:</strong> a handwritten character is captured directly in the browser canvas before inference.</sub></p>
+<p align="center"><sub><strong>Direct Capture:</strong> mouse, touch or pen input with pen/eraser controls and selectable stroke widths.</sub></p>
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<a href="./docs/screenshots/05-recognition-result-character-dark.png"><img src="./docs/screenshots/05-recognition-result-character-dark.png" alt="WriteLens character recognition result" width="100%"></a>
-<br><sub><strong>Character Result:</strong> prediction, confidence, candidate ranking and normalized model input in one panel.</sub>
-</td>
-<td width="50%" valign="top">
-<a href="./docs/screenshots/06-recognition-result-digit-dark.png"><img src="./docs/screenshots/06-recognition-result-digit-dark.png" alt="WriteLens digit recognition result" width="100%"></a>
-<br><sub><strong>Digit Result:</strong> the same explainable output path for numeric handwriting.</sub>
-</td>
-</tr>
-</table>
+<details>
+<summary><strong>View empty canvas and drawing controls</strong></summary>
+<br>
+<a href="./docs/screenshots/03-drawing-canvas-empty-dark.png"><img src="./docs/screenshots/03-drawing-canvas-empty-dark.png" alt="WriteLens empty drawing canvas" width="100%"></a>
+</details>
 
-### 4. Private Recognition Archive
+---
 
-History is metadata-first. Users can search by prediction, source or model, review confidence, inspect timestamps, delete individual results, or clear the archive without exposing the original handwriting image.
+### 05 · Explainable character result
+
+<a href="./docs/screenshots/05-recognition-result-character-dark.png">
+  <img src="./docs/screenshots/05-recognition-result-character-dark.png" alt="WriteLens explainable character recognition result" width="100%">
+</a>
+
+<p align="center"><sub><strong>Character Inference:</strong> top prediction, confidence, ranked candidates and the normalized 28 × 28 model input appear together.</sub></p>
+
+---
+
+### 06 · Digit-specialist inference
+
+<a href="./docs/screenshots/06-recognition-result-digit-dark.png">
+  <img src="./docs/screenshots/06-recognition-result-digit-dark.png" alt="WriteLens digit recognition result" width="100%">
+</a>
+
+<p align="center"><sub><strong>Digit Inference:</strong> the same explainable result path served by the dedicated MNIST digit specialist.</sub></p>
+
+---
+
+### 07 · Private recognition history
 
 <a href="./docs/screenshots/07-recognition-history-dark.png">
   <img src="./docs/screenshots/07-recognition-history-dark.png" alt="WriteLens recognition history" width="100%">
 </a>
 
-<p align="center"><sub><strong>Recognition History:</strong> total results, average confidence, latest activity, search, model metadata and per-result deletion.</sub></p>
+<p align="center"><sub><strong>Private Result Archive:</strong> searchable prediction metadata, confidence, model/source information, timestamps and deletion controls—without storing the original handwriting image.</sub></p>
 
-### 5. Account, Security and Themes
+---
 
-Profile identity, profile photo, username, email, password and reading theme are presented together as account-owned state. Theme changes follow the authenticated user rather than being written into browser storage.
-
-<table>
-<tr>
-<td width="50%" valign="top">
-<a href="./docs/screenshots/08-account-dark.png"><img src="./docs/screenshots/08-account-dark.png" alt="WriteLens account page dark theme" width="100%"></a>
-<br><sub><strong>Dark Account Workspace</strong></sub>
-</td>
-<td width="50%" valign="top">
-<a href="./docs/screenshots/09-account-light.png"><img src="./docs/screenshots/09-account-light.png" alt="WriteLens account page light theme" width="100%"></a>
-<br><sub><strong>Light Account Workspace</strong></sub>
-</td>
-</tr>
-</table>
-
-<a href="./docs/screenshots/10-recognition-light.png">
-  <img src="./docs/screenshots/10-recognition-light.png" alt="WriteLens Recognition Studio light theme" width="100%">
-</a>
-
-<p align="center"><sub><strong>Purpose-Built Light Theme:</strong> the recognition experience retains the same hierarchy and workflow with a dedicated bright visual system.</sub></p>
-
-### 6. Model Laboratory
-
-The Model Lab makes trained-model readiness and evaluation visible inside the product. Registered checkpoints are shown as ready only when the expected checkpoint and metadata files exist.
+### 08 · Model Laboratory
 
 <a href="./docs/screenshots/14-model-lab-overview-dark.png">
   <img src="./docs/screenshots/14-model-lab-overview-dark.png" alt="WriteLens Model Laboratory" width="100%">
 </a>
 
-<a href="./docs/screenshots/15-model-lab-training-architecture-dark.png">
-  <img src="./docs/screenshots/15-model-lab-training-architecture-dark.png" alt="WriteLens model metrics and training architecture" width="100%">
+<p align="center"><sub><strong>Model Transparency:</strong> MNIST and EMNIST checkpoint readiness, roles and evaluation evidence surfaced inside the product.</sub></p>
+
+<details>
+<summary><strong>View training architecture and evaluation metrics</strong></summary>
+<br>
+<a href="./docs/screenshots/15-model-lab-training-architecture-dark.png"><img src="./docs/screenshots/15-model-lab-training-architecture-dark.png" alt="WriteLens model training architecture" width="100%"></a>
+</details>
+
+---
+
+### 09 · Recognition guidance
+
+<a href="./docs/screenshots/17-guide-overview-dark.png">
+  <img src="./docs/screenshots/17-guide-overview-dark.png" alt="WriteLens recognition guide" width="100%">
 </a>
 
-<p align="center"><sub><strong>Model Transparency:</strong> registered checkpoints, runtime role, Accuracy, Macro F1, UAR and the training path from dataset to deployable TorchScript artifact.</sub></p>
+<p align="center"><sub><strong>Input Guidance:</strong> framing, contrast, natural-stroke and model-selection guidance improves recognition quality.</sub></p>
 
-### 7. Recognition Guide
+<details>
+<summary><strong>View recommended vs. avoid examples</strong></summary>
+<br>
+<a href="./docs/screenshots/16-guide-detail-dark.png"><img src="./docs/screenshots/16-guide-detail-dark.png" alt="WriteLens recognition guide examples" width="100%"></a>
+</details>
 
-The guide translates preprocessing assumptions into practical input advice: isolate one symbol, keep contrast clear, use natural strokes and choose the correct recognition mode.
+---
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<a href="./docs/screenshots/17-guide-overview-dark.png"><img src="./docs/screenshots/17-guide-overview-dark.png" alt="WriteLens Recognition Guide" width="100%"></a>
-<br><sub><strong>Recognition Guide:</strong> four concise input-quality principles.</sub>
-</td>
-<td width="50%" valign="top">
-<a href="./docs/screenshots/16-guide-detail-dark.png"><img src="./docs/screenshots/16-guide-detail-dark.png" alt="WriteLens guide examples" width="100%"></a>
-<br><sub><strong>Recommended vs Avoid:</strong> visual examples of clean and ambiguous recognition inputs.</sub>
-</td>
-</tr>
-</table>
+### 10 · Account, appearance and security
+
+<a href="./docs/screenshots/08-account-dark.png">
+  <img src="./docs/screenshots/08-account-dark.png" alt="WriteLens account workspace dark theme" width="100%">
+</a>
+
+<p align="center"><sub><strong>Account Workspace:</strong> profile identity, avatar, password controls and theme preferences in one authenticated surface.</sub></p>
+
+<details>
+<summary><strong>View the account workspace in light mode</strong></summary>
+<br>
+<a href="./docs/screenshots/09-account-light.png"><img src="./docs/screenshots/09-account-light.png" alt="WriteLens account workspace light theme" width="100%"></a>
+</details>
 
 <p align="right"><a href="#top">Back to top ↑</a></p>
 
