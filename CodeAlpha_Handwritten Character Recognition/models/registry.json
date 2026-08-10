@@ -1,0 +1,14 @@
+{
+  "digit": {
+    "name": "MNIST Digit Specialist",
+    "checkpoint": "models/checkpoints/mnist_digit.pt",
+    "metadata": "models/checkpoints/mnist_digit.json",
+    "metrics": "models/reports/mnist_digit.metrics.json"
+  },
+  "character": {
+    "name": "EMNIST ByClass Character Model",
+    "checkpoint": "models/checkpoints/emnist_byclass.pt",
+    "metadata": "models/checkpoints/emnist_byclass.json",
+    "metrics": "models/reports/emnist_byclass.metrics.json"
+  }
+}

@@ -1,0 +1,5 @@
+-r ../backend/requirements.txt
+scikit-learn>=1.6,<2
+matplotlib>=3.10,<4
+tqdm>=4.67,<5
+pandas>=2.2,<3

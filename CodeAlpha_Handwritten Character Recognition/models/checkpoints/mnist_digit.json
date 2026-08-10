@@ -1,0 +1,28 @@
+{
+  "name": "mnist_digit",
+  "model_version": "mnist_digit-v1",
+  "dataset": "mnist",
+  "classes": [
+    "0 - zero",
+    "1 - one",
+    "2 - two",
+    "3 - three",
+    "4 - four",
+    "5 - five",
+    "6 - six",
+    "7 - seven",
+    "8 - eight",
+    "9 - nine"
+  ],
+  "input_shape": [
+    1,
+    28,
+    28
+  ],
+  "normalization": {
+    "mean": 0.5,
+    "std": 0.5
+  },
+  "architecture": "WriteLensCNN",
+  "torchscript": true
+}
