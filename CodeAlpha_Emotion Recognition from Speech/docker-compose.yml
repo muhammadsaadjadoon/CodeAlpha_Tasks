@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: inflect
+      POSTGRES_USER: inflect
+      POSTGRES_PASSWORD: inflect
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U inflect -d inflect"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    volumes:
+      - inflect_postgres:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  inflect_postgres:
