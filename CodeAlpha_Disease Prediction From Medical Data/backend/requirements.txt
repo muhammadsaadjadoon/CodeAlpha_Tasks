@@ -1,0 +1,17 @@
+# HeartTrack backend dependencies
+# Target runtime: CPython 3.14.x (Windows x86-64)
+fastapi==0.128.2
+uvicorn[standard]==0.48.0
+pydantic==2.13.4
+pydantic-settings==2.14.1
+pandas==2.3.3
+numpy==2.3.5
+scikit-learn==1.8.0
+xgboost==3.4.0
+joblib==1.5.3
+PyJWT==2.13.0
+argon2-cffi==25.1.0
+python-multipart==0.0.29
+email-validator==2.3.0
+pytest==9.0.2
+httpx==0.28.1

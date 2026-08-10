@@ -1,0 +1,343 @@
+{
+  "project": "HeartTrack",
+  "training_mode": "full",
+  "trained_at_utc": "2026-08-09T20:42:02.749166+00:00",
+  "selection_rule": "HeartTrack selects the model with the best average ROC-AUC across five cross-validation runs. The test set is kept separate for final evaluation.",
+  "selected_model": "SVM + sigmoid calibration",
+  "selected_base_model": "SVM",
+  "threshold": 0.5,
+  "calibrated_holdout": {
+    "roc_auc": 0.8951,
+    "accuracy": 0.7826,
+    "balanced_accuracy": 0.7752,
+    "precision": 0.7818,
+    "recall": 0.8431,
+    "f1": 0.8113,
+    "brier": 0.1343,
+    "confusion_matrix": [
+      [
+        58,
+        24
+      ],
+      [
+        16,
+        86
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.7837837837837838,
+        "recall": 0.7073170731707317,
+        "f1-score": 0.7435897435897436,
+        "support": 82.0
+      },
+      "1": {
+        "precision": 0.7818181818181819,
+        "recall": 0.8431372549019608,
+        "f1-score": 0.8113207547169812,
+        "support": 102.0
+      },
+      "accuracy": 0.782608695652174,
+      "macro avg": {
+        "precision": 0.7828009828009828,
+        "recall": 0.7752271640363462,
+        "f1-score": 0.7774552491533624,
+        "support": 184.0
+      },
+      "weighted avg": {
+        "precision": 0.7826941566072001,
+        "recall": 0.782608695652174,
+        "f1-score": 0.7811362823667992,
+        "support": 184.0
+      }
+    }
+  },
+  "models": {
+    "Logistic Regression": {
+      "cv_roc_auc": 0.8791,
+      "best_params": {
+        "model__solver": "lbfgs",
+        "model__C": 0.01
+      },
+      "holdout": {
+        "roc_auc": 0.8834,
+        "accuracy": 0.7935,
+        "balanced_accuracy": 0.7922,
+        "precision": 0.82,
+        "recall": 0.8039,
+        "f1": 0.8119,
+        "brier": 0.1446,
+        "confusion_matrix": [
+          [
+            64,
+            18
+          ],
+          [
+            20,
+            82
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.7619047619047619,
+            "recall": 0.7804878048780488,
+            "f1-score": 0.7710843373493976,
+            "support": 82.0
+          },
+          "1": {
+            "precision": 0.82,
+            "recall": 0.803921568627451,
+            "f1-score": 0.8118811881188119,
+            "support": 102.0
+          },
+          "accuracy": 0.7934782608695652,
+          "macro avg": {
+            "precision": 0.7909523809523809,
+            "recall": 0.7922046867527499,
+            "f1-score": 0.7914827627341048,
+            "support": 184.0
+          },
+          "weighted avg": {
+            "precision": 0.7941097308488613,
+            "recall": 0.7934782608695652,
+            "f1-score": 0.7936999828846164,
+            "support": 184.0
+          }
+        }
+      }
+    },
+    "SVM": {
+      "cv_roc_auc": 0.8807,
+      "best_params": {
+        "model__kernel": "rbf",
+        "model__gamma": "scale",
+        "model__C": 0.1
+      },
+      "holdout": {
+        "roc_auc": 0.8955,
+        "accuracy": 0.788,
+        "balanced_accuracy": 0.7801,
+        "precision": 0.7838,
+        "recall": 0.8529,
+        "f1": 0.8169,
+        "brier": 0.1343,
+        "confusion_matrix": [
+          [
+            58,
+            24
+          ],
+          [
+            15,
+            87
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.7945205479452054,
+            "recall": 0.7073170731707317,
+            "f1-score": 0.7483870967741936,
+            "support": 82.0
+          },
+          "1": {
+            "precision": 0.7837837837837838,
+            "recall": 0.8529411764705882,
+            "f1-score": 0.8169014084507042,
+            "support": 102.0
+          },
+          "accuracy": 0.7880434782608695,
+          "macro avg": {
+            "precision": 0.7891521658644947,
+            "recall": 0.7801291248206599,
+            "f1-score": 0.7826442526124489,
+            "support": 184.0
+          },
+          "weighted avg": {
+            "precision": 0.788568646073113,
+            "recall": 0.7880434782608695,
+            "f1-score": 0.7863678565079115,
+            "support": 184.0
+          }
+        }
+      }
+    },
+    "Random Forest": {
+      "cv_roc_auc": 0.8745,
+      "best_params": {
+        "model__n_estimators": 500,
+        "model__min_samples_leaf": 2,
+        "model__max_features": "sqrt",
+        "model__max_depth": 12
+      },
+      "holdout": {
+        "roc_auc": 0.9078,
+        "accuracy": 0.7989,
+        "balanced_accuracy": 0.7935,
+        "precision": 0.8037,
+        "recall": 0.8431,
+        "f1": 0.823,
+        "brier": 0.1235,
+        "confusion_matrix": [
+          [
+            61,
+            21
+          ],
+          [
+            16,
+            86
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.7922077922077922,
+            "recall": 0.7439024390243902,
+            "f1-score": 0.7672955974842768,
+            "support": 82.0
+          },
+          "1": {
+            "precision": 0.8037383177570093,
+            "recall": 0.8431372549019608,
+            "f1-score": 0.8229665071770335,
+            "support": 102.0
+          },
+          "accuracy": 0.7989130434782609,
+          "macro avg": {
+            "precision": 0.7979730549824008,
+            "recall": 0.7935198469631755,
+            "f1-score": 0.7951310523306552,
+            "support": 184.0
+          },
+          "weighted avg": {
+            "precision": 0.7985997139796409,
+            "recall": 0.7989130434782609,
+            "f1-score": 0.7981566452487397,
+            "support": 184.0
+          }
+        }
+      }
+    },
+    "XGBoost": {
+      "cv_roc_auc": 0.875,
+      "best_params": {
+        "model__subsample": 0.85,
+        "model__reg_lambda": 5.0,
+        "model__n_estimators": 480,
+        "model__min_child_weight": 1,
+        "model__max_depth": 2,
+        "model__learning_rate": 0.04,
+        "model__colsample_bytree": 0.7
+      },
+      "holdout": {
+        "roc_auc": 0.9015,
+        "accuracy": 0.8315,
+        "balanced_accuracy": 0.8241,
+        "precision": 0.8198,
+        "recall": 0.8922,
+        "f1": 0.8545,
+        "brier": 0.1225,
+        "confusion_matrix": [
+          [
+            62,
+            20
+          ],
+          [
+            11,
+            91
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.8493150684931506,
+            "recall": 0.7560975609756098,
+            "f1-score": 0.8,
+            "support": 82.0
+          },
+          "1": {
+            "precision": 0.8198198198198198,
+            "recall": 0.8921568627450981,
+            "f1-score": 0.8544600938967136,
+            "support": 102.0
+          },
+          "accuracy": 0.8315217391304348,
+          "macro avg": {
+            "precision": 0.8345674441564852,
+            "recall": 0.824127211860354,
+            "f1-score": 0.8272300469483569,
+            "support": 184.0
+          },
+          "weighted avg": {
+            "precision": 0.8329644415111955,
+            "recall": 0.8315217391304348,
+            "f1-score": 0.8301898346601347,
+            "support": 184.0
+          }
+        }
+      }
+    }
+  },
+  "split": {
+    "train_rows": 736,
+    "test_rows": 184,
+    "test_fraction": 0.2,
+    "stratified": true,
+    "random_state": 42
+  },
+  "dataset": {
+    "dataset_name": "UCI Heart Disease \u2014 combined processed cohorts",
+    "rows": 920,
+    "features": 13,
+    "target": "target",
+    "positive_rate": 0.5533,
+    "source_counts": {
+      "Cleveland": 303,
+      "Hungarian": 294,
+      "VA Long Beach": 200,
+      "Switzerland": 123
+    },
+    "missing_values": {
+      "age": 0,
+      "sex": 0,
+      "cp": 0,
+      "trestbps": 60,
+      "chol": 202,
+      "fbs": 90,
+      "restecg": 2,
+      "thalach": 55,
+      "exang": 55,
+      "oldpeak": 62,
+      "slope": 309,
+      "ca": 611,
+      "thal": 486
+    },
+    "feature_names": [
+      "age",
+      "sex",
+      "cp",
+      "trestbps",
+      "chol",
+      "fbs",
+      "restecg",
+      "thalach",
+      "exang",
+      "oldpeak",
+      "slope",
+      "ca",
+      "thal"
+    ],
+    "notes": [
+      "The target indicates whether heart disease was recorded in the source data.",
+      "Source location is kept for reporting only and is not used to calculate risk.",
+      "Missing numeric values are filled with the median during model training.",
+      "Zero values for cholesterol, resting blood pressure, and maximum heart rate are treated as missing before training."
+    ]
+  },
+  "runtime": {
+    "python": "3.13.5",
+    "scikit_learn": "1.8.0",
+    "xgboost": "3.1.3"
+  },
+  "cautions": [
+    "HeartTrack is not a diagnostic tool, and its predictions have not been clinically validated.",
+    "The UCI heart-disease records are historical and contain missing values.",
+    "The 0.5 decision threshold and on-screen risk levels are model settings, not clinical categories."
+  ]
+}

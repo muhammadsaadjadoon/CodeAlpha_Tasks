@@ -1,0 +1,1 @@
+"""HeartTrack FastAPI application."""

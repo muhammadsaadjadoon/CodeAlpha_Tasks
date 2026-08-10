@@ -1,0 +1,49 @@
+{
+  "dataset_name": "UCI Heart Disease \u2014 combined processed cohorts",
+  "rows": 920,
+  "features": 13,
+  "target": "target",
+  "positive_rate": 0.5533,
+  "source_counts": {
+    "Cleveland": 303,
+    "Hungarian": 294,
+    "VA Long Beach": 200,
+    "Switzerland": 123
+  },
+  "missing_values": {
+    "age": 0,
+    "sex": 0,
+    "cp": 0,
+    "trestbps": 60,
+    "chol": 202,
+    "fbs": 90,
+    "restecg": 2,
+    "thalach": 55,
+    "exang": 55,
+    "oldpeak": 62,
+    "slope": 309,
+    "ca": 611,
+    "thal": 486
+  },
+  "feature_names": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "notes": [
+    "The target indicates whether heart disease was recorded in the source data.",
+    "Source location is kept for reporting only and is not used to calculate risk.",
+    "Missing numeric values are filled with the median during model training.",
+    "Zero values for cholesterol, resting blood pressure, and maximum heart rate are treated as missing before training."
+  ]
+}
